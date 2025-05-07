@@ -3,7 +3,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import projectRoutes from './routes/projectRotes.js';
 
-dotenv.config(); // Load .env variables
+// Load .env variables
+dotenv.config(); 
 
 const app = express();
 const PORT = process.env.PORT || 5000;
