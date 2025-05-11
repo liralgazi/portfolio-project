@@ -10,8 +10,8 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/projects")
-      .then((res) => res.json())
+    fetch("https://github-portfolio-backend.onrender.com/api/projects")
+    .then((res) => res.json())
       .then((data) => {
         setProjects(data);
         setFiltered(data);
